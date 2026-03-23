@@ -1,0 +1,206 @@
+# wikidata_subset_downloader.py
+
+This script allows you to download subsets of data from Wikidata based on specific entity types (QIDs). It uses SPARQL queries to fetch RDF data for entities of a chosen type and saves the results in RDF/XML format.
+
+## How to Run
+
+Run the script with the desired QID and limit as arguments:
+```bash
+python wikidata_subset_downloader.py --qid Q12136 --limit 5000
+```
+- Replace `Q12136` with the QID of the entity type you want to download.
+- Replace `5000` with the maximum number of entities to download.
+
+The downloaded data will be saved in a folder named `wikidata_<QID>_<DATE>`, with the RDF file inside.
+
+## Supported QIDs
+
+The following table lists the supported QIDs and their corresponding entity types:
+
+| QID       | Entity Type Description                                      |
+|:---------:|:-----------------------------------------------------------:|
+| Q5        | Human (individual people)                                   |
+| Q12136    | Disease (medical conditions and disorders)                  |
+| Q16521    | Taxon (biological taxa, including species and classifications) |
+| Q7187     | Gene (genetic elements)                                     |
+| Q11173    | Chemical compound (chemical substances)                     |
+| Q79007    | Medical procedure (medical interventions and treatments)    |
+| Q4022     | River (natural flowing watercourses)                        |
+| Q8502     | Mountain (natural landforms, peaks, and ranges)             |
+| Q515      | City (urban settlements)                                    |
+| Q6256     | Country (sovereign states)                                  |
+| Q11424    | Film (motion pictures)                                      |
+| Q13442814 | Scientific article (academic publications)                  |
+| Q482994   | Artist (creative professionals)                             |
+| Q732577   | Publication (published works)                               |
+| Q3305213  | Painting (visual artworks)                                  |
+| Q28389    | Company (business organizations)                            |
+| Q3918     | University (higher education institutions)                  |
+| Q1190554  | Historical event (significant past occurrences)             |
+| Q7397     | Software (computer programs)                                |
+| Q386724   | Website (online resources)                                  |
+
+# wikidata_sampler.py
+
+## Description
+This script allows you to explore a subset of Wikidata in RDF format. It loads an RDF graph from a file, selects a random node (subject), and prints its URI, label (if available), and the count of 
+predicates associated with it. The script also retrieves and displays neighboring nodes, both outgoing and incoming, along with their labels and directions (e.g., "→" for outgoing, "←" for 
+incoming).
+
+The RDF file can be generated using the `wikidata_subset_downloader.py` script, which downloads a subset of Wikidata entities in RDF format.
+
+## How to Run
+
+1. Use the `wikidata_subset_downloader.py` script to download the RDF file containing the Wikidata subset you wish to explore.
+2. Run the `wikidata_sampler.py` script with the following command:
+
+```bash
+python wikidata_sampler.py wikidata_Q12136_2025-02-18/Q12136_subset.rdf
+```
+
+The path `wikidata_Q12136_2025-02-18/Q12136_subset.rdf` can be replaced with any other desired RDF file.
+
+# knowledge_base_triple_extractor.py
+
+This Python script extracts triples (subject, predicate, object) from **Wikidata** or **YAGO** knowledge bases. It retrieves n-hop neighbors of a given entity and includes an optional GUI to select 
+and save some of the triples.
+
+## Usage
+
+### Command-Line Arguments
+- `--entity`: The entity ID to query (e.g., `Q12345` for Wikidata or `ACF_Fiorentina` for YAGO).
+- `--hops`: The number of hops (default: 1).
+- `--save`: Enable the GUI to select and save some of the triples.
+- `--source`: The knowledge base to query (`wikidata` or `yago`). Default is `wikidata`.
+
+### Example Commands
+
+#### Query Wikidata
+```bash
+python knowledge_base_triple_extractor.py --entity Q12345 --hops 2 --save
+```
+#### Query YAGO:
+```bash
+python knowledge_base_triple_extractor.py --entity ACF_Fiorentina --hops 2 --source yago --save
+```
+#### TBC
+```bash
+python knowledge_base_triple_extractor.py --multiple_samples --num_samples 5000 --max_hops 2 --source wikidata --ratio 0.2
+```
+#### Parallel Extraction (TBC)
+```bash
+python knowledge_base_triple_extractor.py --multiple_samples --num_samples 10 --max_hops 2 --source wikidata --ratio 0.3 --parallel --num_threads 4
+```
+#### Controlled Extraction (TBC)
+```bash
+python knowledge_base_triple_extractor.py --multiple_samples --num_samples 10 --max_hops 4 --parallel --num_threads 2 --controlled_extraction --num_neighbors_per_hop 3 --source wikidata
+```
+#### Controlled Extraction with Entity Type Constraints (TBC)
+```bash
+python knowledge_base_triple_extractor.py --multiple_samples --num_samples 2 --max_hops 4 --parallel --num_threads 2 --controlled_extraction --num_neighbors_per_hop 5 --source wikidata --type_qid Q5
+```
+#### Resume Generation
+```bash
+python knowledge_base_triple_extractor.py --multiple_samples --num_samples 200 --max_hops 4 --parallel --num_threads 5 --controlled_extraction --num_neighbors_per_hop 6 --source wikidata --type_qid Q5 --resume_generation
+``` 
+# filter_triples_with_llm.py
+```bash
+python filter_triples_with_llm.py --source wikidata --model gpt-3.5-turbo --llm_provider chatgpt
+```
+
+```bash
+python filter_triples_with_llm.py --source yago --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek
+```
+
+```bash
+python filter_triples_with_llm.py --source wikidata --model deepseek-ai/DeepSeek-R1 --llm_provider deepseek
+```
+
+```bash
+python filter_triples_with_llm.py --model deepseek-chat --llm_provider deepseek_direct
+```
+
+## Parallel Filtering
+```bash
+python filter_triples_with_llm.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --parallel --num_threads 4
+```
+## Parallel Batch Filtering
+This command processes triples in batch mode, validating all triples in a file with a single API call for efficient processing.
+```bash
+python filter_triples_with_llm.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --mode batch --parallel --num_threads 8
+```
+## Parallel Batch Filtering with Batch Size
+```bash
+python filter_triples_with_llm.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --mode batch --batch_size 10 --parallel --num_threads 2
+```
+# calculate_pruned_triple_statistics.py
+
+This script calculates statistics for triples stored in `_pruned.txt` files within the `data` directory. It provides the number of files, average number of triples per file, maximum/minimum number of triples per file, standard deviation, and a distribution of the number of triples across files.
+
+**Command to run:**
+```bash
+python calculate_pruned_triple_statistics.py --source wikidata
+```
+
+**Additional commands:**
+```bash
+python calculate_pruned_triple_statistics.py --source wikidata --postfix _triples.txt
+```
+
+```bash
+python calculate_pruned_triple_statistics.py --source wikidata --postfix _triples.txt --path ../data/test/
+```
+
+```bash
+python calculate_pruned_triple_statistics.py --source wikidata --postfix _triples.txt --path ../data/train/
+```
+
+# generate_text_from_kg.py
+```bash
+python generate_text_from_kg.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --postfix "_triples.txt"
+```
+
+```bash
+python generate_text_from_kg.py --source wikidata --model gpt-3.5-turbo --llm_provider chatgpt
+```
+## Parallel Text Generation
+```bash
+python generate_text_from_kg.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --postfix "_triples.txt" --num_threads 10
+```
+## Skip Existing Flag
+```bash
+python generate_text_from_kg.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --postfix "_triples.txt" --num_threads 10 --skip_existing
+```
+
+# partition_files.py
+```bash
+python partition_files.py --source wikidata --num_partitions 3
+```
+# rule_based_triple_filtering.py
+```bash
+python rule_based_triple_filtering.py --source wikidata
+```
+# generate_multi_hop_qa_for_paths.py
+```bash
+python generate_multi_hop_qa_for_paths.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --parallel --num_threads 2
+```
+
+# entity_triple_viewer.py
+
+This script retrieves all relationships where the specified entity is the subject. It queries Wikidata to extract and display all triples associated with a given entity ID.
+
+## Usage
+
+```bash
+python entity_triple_viewer.py Q6581097
+```
+
+Replace `Q6581097` with any Wikidata entity ID you want to explore.
+
+# entity_expansion_evaluator.py
+
+Evaluates if a Wikidata entity is worth expanding based on triple informativeness. First applies rule-based filtering, then uses LLM prompting on the remaining triples to determine if all are non-informative or if any informative triples exist.
+
+```bash
+python entity_expansion_evaluator.py Q5 --model gpt-4o --batch_size 1
+```
