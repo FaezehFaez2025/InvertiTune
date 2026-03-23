@@ -32,7 +32,7 @@ This script generates natural language text descriptions for extracted knowledge
 ## Usage
 
 ```bash
-python generate_text_from_kg.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --postfix "_triples.txt"
+python generate_text_from_kg.py --source wikidata --model deepseek-ai/DeepSeek-V3.2 --llm_provider deepseek --postfix "_triples.txt"
 ```
 
 ```bash
@@ -44,7 +44,7 @@ python generate_text_from_kg.py --source wikidata --model gpt-3.5-turbo --llm_pr
 | Argument | Description |
 |----------|-------------|
 | `--source` | Data source (e.g., `wikidata`). |
-| `--model` | LLM model to use (e.g., `deepseek-ai/DeepSeek-V3`, `gpt-3.5-turbo`, `gpt-4o`). |
+| `--model` | LLM model to use (e.g., `deepseek-ai/DeepSeek-V3.2`, `gpt-3.5-turbo`, `gpt-4o`). |
 | `--llm_provider` | LLM API provider: `chatgpt` or `deepseek`. |
 | `--postfix` | File postfix for triple files to process (e.g., `_triples.txt`, `_triples_pruned.txt`). |
 | `--num_threads` | Number of threads for parallel generation (default: 1). |

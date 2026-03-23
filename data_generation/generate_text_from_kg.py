@@ -15,7 +15,7 @@ def generate_text_from_knowledge_graph(triples, model, llm_provider):
     The goal is to reconstruct the original text that could have generated the given knowledge graph.
     """
     # Define the relative path to the .env file
-    dotenv_path = os.path.join(os.path.dirname(__file__), "../../../.env")
+    dotenv_path = os.path.join(os.path.dirname(__file__), "../.env")
     load_dotenv(dotenv_path)
 
     # Get the API key from the .env file
