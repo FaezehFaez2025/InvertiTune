@@ -150,11 +150,6 @@ python partition_files.py --source wikidata --num_partitions 3
 ```bash
 python rule_based_triple_filtering.py --source wikidata
 ```
-# generate_multi_hop_qa_for_paths.py
-```bash
-python generate_multi_hop_qa_for_paths.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --parallel --num_threads 2
-```
-
 # entity_triple_viewer.py
 
 This script retrieves all relationships where the specified entity is the subject. It queries Wikidata to extract and display all triples associated with a given entity ID.
