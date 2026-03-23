@@ -1,0 +1,981 @@
+{
+    "root": {
+        "entity_id": "Q5004542",
+        "name": "Bystander Nunatak",
+        "outgoing_edges": [
+            {
+                "target": {
+                    "entity_id": "Q21590062",
+                    "name": "Antarctic Treaty area",
+                    "outgoing_edges": [
+                        {
+                            "target": {
+                                "entity_id": "Q21635013",
+                                "name": "flag of the Antarctic Treaty",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q20970431",
+                                            "name": "3:2",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q109575129",
+                                                        "name": "landscape orientation",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q109575132",
+                                                                    "name": "portrait orientation",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q109575129",
+                                                                                "name": "landscape orientation",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": []
+                                                                            },
+                                                                            "edge_label": "opposite of"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q109575129",
+                                                                            "source_name": "landscape orientation",
+                                                                            "edge_label": "opposite of"
+                                                                        },
+                                                                        {
+                                                                            "source_id": "Q98929171",
+                                                                            "source_name": "2:3",
+                                                                            "edge_label": "has characteristic"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "opposite of"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q20970431",
+                                                                "source_name": "3:2",
+                                                                "edge_label": "has characteristic"
+                                                            },
+                                                            {
+                                                                "source_id": "Q109575132",
+                                                                "source_name": "portrait orientation",
+                                                                "edge_label": "opposite of"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "has characteristic"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q98929171",
+                                                        "name": "2:3",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q109575132",
+                                                                    "name": "portrait orientation",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": []
+                                                                },
+                                                                "edge_label": "has characteristic"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q20970431",
+                                                                    "name": "3:2",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": []
+                                                                },
+                                                                "edge_label": "opposite of"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q20970431",
+                                                                "source_name": "3:2",
+                                                                "edge_label": "opposite of"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "opposite of"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q20970434",
+                                                        "name": "width to height aspect ratio",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q20970431",
+                                                                "source_name": "3:2",
+                                                                "edge_label": "instance of"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "instance of"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q21635013",
+                                                    "source_name": "flag of the Antarctic Treaty",
+                                                    "edge_label": "aspect ratio (W:H)"
+                                                },
+                                                {
+                                                    "source_id": "Q98929171",
+                                                    "source_name": "2:3",
+                                                    "edge_label": "opposite of"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "aspect ratio (W:H)"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q21590062",
+                                            "name": "Antarctic Treaty area",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": []
+                                        },
+                                        "edge_label": "applies to jurisdiction"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q14660",
+                                            "name": "flag",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q21635013",
+                                                    "source_name": "flag of the Antarctic Treaty",
+                                                    "edge_label": "instance of"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "instance of"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q21590062",
+                                        "source_name": "Antarctic Treaty area",
+                                        "edge_label": "flag"
+                                    }
+                                ]
+                            },
+                            "edge_label": "flag"
+                        },
+                        {
+                            "target": {
+                                "entity_id": "Q182814",
+                                "name": "Antarctic Treaty System",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q48525",
+                                            "name": "Federal Government of the United States",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q228389",
+                                                        "name": "Voice of America",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q61",
+                                                                    "name": "Washington, D.C.",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q30",
+                                                                                "name": "United States",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q48525",
+                                                                                        "source_name": "Federal Government of the United States",
+                                                                                        "edge_label": "country of citizenship"
+                                                                                    },
+                                                                                    {
+                                                                                        "source_id": "Q61",
+                                                                                        "source_name": "Washington, D.C.",
+                                                                                        "edge_label": "country"
+                                                                                    },
+                                                                                    {
+                                                                                        "source_id": "Q11696",
+                                                                                        "source_name": "President of the United States",
+                                                                                        "edge_label": "country"
+                                                                                    },
+                                                                                    {
+                                                                                        "source_id": "Q6977769",
+                                                                                        "source_name": "National Register of Historic Places listings in Washington, D.C.",
+                                                                                        "edge_label": "country"
+                                                                                    },
+                                                                                    {
+                                                                                        "source_id": "Q47566",
+                                                                                        "source_name": "United States presidential election",
+                                                                                        "edge_label": "country"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "country"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q6977769",
+                                                                                "name": "National Register of Historic Places listings in Washington, D.C.",
+                                                                                "outgoing_edges": [
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q13406463",
+                                                                                            "name": "Wikimedia list article",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": [
+                                                                                                {
+                                                                                                    "source_id": "Q6977769",
+                                                                                                    "source_name": "National Register of Historic Places listings in Washington, D.C.",
+                                                                                                    "edge_label": "instance of"
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "edge_label": "instance of"
+                                                                                    },
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q30",
+                                                                                            "name": "United States",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": []
+                                                                                        },
+                                                                                        "edge_label": "country"
+                                                                                    },
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q19558910",
+                                                                                            "name": "National Register of Historic Places listed place",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": [
+                                                                                                {
+                                                                                                    "source_id": "Q6977769",
+                                                                                                    "source_name": "National Register of Historic Places listings in Washington, D.C.",
+                                                                                                    "edge_label": "is a list of"
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "edge_label": "is a list of"
+                                                                                    }
+                                                                                ],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q61",
+                                                                                        "source_name": "Washington, D.C.",
+                                                                                        "edge_label": "list of monuments"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "list of monuments"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q3551781",
+                                                                                "name": "District of Columbia",
+                                                                                "outgoing_edges": [
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q6527389",
+                                                                                            "name": "Council of the District of Columbia",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": [
+                                                                                                {
+                                                                                                    "source_id": "Q3551781",
+                                                                                                    "source_name": "District of Columbia",
+                                                                                                    "edge_label": "legislative body"
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "edge_label": "legislative body"
+                                                                                    },
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q7322",
+                                                                                            "name": "Christopher Columbus",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": [
+                                                                                                {
+                                                                                                    "source_id": "Q3551781",
+                                                                                                    "source_name": "District of Columbia",
+                                                                                                    "edge_label": "named after"
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "edge_label": "named after"
+                                                                                    },
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q5190572",
+                                                                                            "name": "Mayor of the District of Columbia",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": [
+                                                                                                {
+                                                                                                    "source_id": "Q3551781",
+                                                                                                    "source_name": "District of Columbia",
+                                                                                                    "edge_label": "office held by head of government"
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "edge_label": "office held by head of government"
+                                                                                    }
+                                                                                ],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q61",
+                                                                                        "source_name": "Washington, D.C.",
+                                                                                        "edge_label": "coextensive with"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "coextensive with"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q48525",
+                                                                            "source_name": "Federal Government of the United States",
+                                                                            "edge_label": "headquarters location"
+                                                                        },
+                                                                        {
+                                                                            "source_id": "Q228389",
+                                                                            "source_name": "Voice of America",
+                                                                            "edge_label": "place of publication"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "place of publication"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q65600541",
+                                                                    "name": "Kari Lake",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q29468",
+                                                                                "name": "Republican Party",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q65600541",
+                                                                                        "source_name": "Kari Lake",
+                                                                                        "edge_label": "member of political party"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "member of political party"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q577878",
+                                                                                "name": "Rock Island",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q65600541",
+                                                                                        "source_name": "Kari Lake",
+                                                                                        "edge_label": "place of birth"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "place of birth"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q228389",
+                                                                            "source_name": "Voice of America",
+                                                                            "edge_label": "significant person"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "significant person"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q17172850",
+                                                                    "name": "voice",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q228389",
+                                                                            "source_name": "Voice of America",
+                                                                            "edge_label": "named after"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "named after"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q48525",
+                                                                "source_name": "Federal Government of the United States",
+                                                                "edge_label": "house publication"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "house publication"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q61",
+                                                        "name": "Washington, D.C.",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "headquarters location"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q11696",
+                                                        "name": "President of the United States",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q47566",
+                                                                    "name": "United States presidential election",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q30",
+                                                                                "name": "United States",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": []
+                                                                            },
+                                                                            "edge_label": "country"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q13425157",
+                                                                                "name": "list of the United States presidential elections",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q47566",
+                                                                                        "source_name": "United States presidential election",
+                                                                                        "edge_label": "has list"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "has list"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q11696",
+                                                                            "source_name": "President of the United States",
+                                                                            "edge_label": "elected in"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "elected in"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q30",
+                                                                    "name": "United States",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": []
+                                                                },
+                                                                "edge_label": "country"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q48525",
+                                                                "source_name": "Federal Government of the United States",
+                                                                "edge_label": "authority"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "authority"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q30",
+                                                        "name": "United States",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "country of citizenship"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q182814",
+                                                    "source_name": "Antarctic Treaty System",
+                                                    "edge_label": "depositary"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "depositary"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q21590062",
+                                        "source_name": "Antarctic Treaty area",
+                                        "edge_label": "foundational text"
+                                    }
+                                ]
+                            },
+                            "edge_label": "foundational text"
+                        }
+                    ],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q5004542",
+                            "source_name": "Bystander Nunatak",
+                            "edge_label": "located in the administrative territorial entity"
+                        },
+                        {
+                            "source_id": "Q7901713",
+                            "source_name": "Usarp Mountains",
+                            "edge_label": "located in the administrative territorial entity"
+                        },
+                        {
+                            "source_id": "Q21635013",
+                            "source_name": "flag of the Antarctic Treaty",
+                            "edge_label": "applies to jurisdiction"
+                        },
+                        {
+                            "source_id": "Q1929197",
+                            "source_name": "Mount Kirkpatrick",
+                            "edge_label": "located in the administrative territorial entity"
+                        }
+                    ]
+                },
+                "edge_label": "located in the administrative territorial entity"
+            },
+            {
+                "target": {
+                    "entity_id": "Q7901713",
+                    "name": "Usarp Mountains",
+                    "outgoing_edges": [
+                        {
+                            "target": {
+                                "entity_id": "Q21590062",
+                                "name": "Antarctic Treaty area",
+                                "outgoing_edges": [],
+                                "incoming_edges": []
+                            },
+                            "edge_label": "located in the administrative territorial entity"
+                        },
+                        {
+                            "target": {
+                                "entity_id": "Q319671",
+                                "name": "Transantarctic Mountains",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q79064",
+                                            "name": "Cambrian",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q350891",
+                                                        "name": "Adam Sedgwick",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q27870052",
+                                                                    "name": "Sedgwick",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q8229",
+                                                                                "name": "Latin script",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q27870052",
+                                                                                        "source_name": "Sedgwick",
+                                                                                        "edge_label": "writing system"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "writing system"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q1860",
+                                                                                "name": "English",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q27870052",
+                                                                                        "source_name": "Sedgwick",
+                                                                                        "edge_label": "language of work or name"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "language of work or name"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q350891",
+                                                                            "source_name": "Adam Sedgwick",
+                                                                            "edge_label": "family name"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "family name"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q6423963",
+                                                                    "name": "Anglicanism",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q5043",
+                                                                                "name": "Christianity",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q6423963",
+                                                                                        "source_name": "Anglicanism",
+                                                                                        "edge_label": "religion or worldview"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "religion or worldview"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q123129246",
+                                                                                "name": "Christian denominational family",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q6423963",
+                                                                                        "source_name": "Anglicanism",
+                                                                                        "edge_label": "instance of"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "instance of"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q350891",
+                                                                            "source_name": "Adam Sedgwick",
+                                                                            "edge_label": "religion or worldview"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "religion or worldview"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q79064",
+                                                                "source_name": "Cambrian",
+                                                                "edge_label": "named by"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "named by"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q62100",
+                                                        "name": "Ordovician",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q79064",
+                                                                    "name": "Cambrian",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": []
+                                                                },
+                                                                "edge_label": "follows"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q768052",
+                                                                    "name": "Ordovices",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q25",
+                                                                                "name": "Wales",
+                                                                                "outgoing_edges": [
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q10690",
+                                                                                            "name": "Cardiff",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": [
+                                                                                                {
+                                                                                                    "source_id": "Q25",
+                                                                                                    "source_name": "Wales",
+                                                                                                    "edge_label": "capital"
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "edge_label": "capital"
+                                                                                    },
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q160036",
+                                                                                            "name": "Hen Wlad Fy Nhadau",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": [
+                                                                                                {
+                                                                                                    "source_id": "Q25",
+                                                                                                    "source_name": "Wales",
+                                                                                                    "edge_label": "anthem"
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "edge_label": "anthem"
+                                                                                    },
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q19588569",
+                                                                                            "name": "WikiProject Wales",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": [
+                                                                                                {
+                                                                                                    "source_id": "Q25",
+                                                                                                    "source_name": "Wales",
+                                                                                                    "edge_label": "maintained by WikiProject"
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        "edge_label": "maintained by WikiProject"
+                                                                                    }
+                                                                                ],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q27814",
+                                                                                        "source_name": "Cambria",
+                                                                                        "edge_label": "said to be the same as"
+                                                                                    },
+                                                                                    {
+                                                                                        "source_id": "Q768052",
+                                                                                        "source_name": "Ordovices",
+                                                                                        "edge_label": "country"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "country"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q335073",
+                                                                                "name": "Caratacus",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q768052",
+                                                                                        "source_name": "Ordovices",
+                                                                                        "edge_label": "connects with"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "connects with"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q4792422",
+                                                                                "name": "Arllechwedd",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q768052",
+                                                                                        "source_name": "Ordovices",
+                                                                                        "edge_label": "replaced by"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "replaced by"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q62100",
+                                                                            "source_name": "Ordovician",
+                                                                            "edge_label": "named after"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "named after"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q79064",
+                                                                "source_name": "Cambrian",
+                                                                "edge_label": "followed by"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "followed by"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q27814",
+                                                        "name": "Cambria",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q25",
+                                                                    "name": "Wales",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": []
+                                                                },
+                                                                "edge_label": "said to be the same as"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q82794",
+                                                                    "name": "region",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q27814",
+                                                                            "source_name": "Cambria",
+                                                                            "edge_label": "instance of"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "instance of"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q79064",
+                                                                "source_name": "Cambrian",
+                                                                "edge_label": "named after"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "named after"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q319671",
+                                                    "source_name": "Transantarctic Mountains",
+                                                    "edge_label": "time period"
+                                                },
+                                                {
+                                                    "source_id": "Q62100",
+                                                    "source_name": "Ordovician",
+                                                    "edge_label": "follows"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "time period"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q46831",
+                                            "name": "mountain range",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q7901713",
+                                                    "source_name": "Usarp Mountains",
+                                                    "edge_label": "instance of"
+                                                },
+                                                {
+                                                    "source_id": "Q319671",
+                                                    "source_name": "Transantarctic Mountains",
+                                                    "edge_label": "instance of"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "instance of"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q1929197",
+                                            "name": "Mount Kirkpatrick",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q8502",
+                                                        "name": "mountain",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q1929197",
+                                                                "source_name": "Mount Kirkpatrick",
+                                                                "edge_label": "instance of"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "instance of"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q21590062",
+                                                        "name": "Antarctic Treaty area",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "located in the administrative territorial entity"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q319671",
+                                                    "source_name": "Transantarctic Mountains",
+                                                    "edge_label": "highest point"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "highest point"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q7901713",
+                                        "source_name": "Usarp Mountains",
+                                        "edge_label": "mountain range"
+                                    }
+                                ]
+                            },
+                            "edge_label": "mountain range"
+                        },
+                        {
+                            "target": {
+                                "entity_id": "Q46831",
+                                "name": "mountain range",
+                                "outgoing_edges": [],
+                                "incoming_edges": []
+                            },
+                            "edge_label": "instance of"
+                        }
+                    ],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q5004542",
+                            "source_name": "Bystander Nunatak",
+                            "edge_label": "mountain range"
+                        }
+                    ]
+                },
+                "edge_label": "mountain range"
+            }
+        ],
+        "incoming_edges": []
+    }
+}

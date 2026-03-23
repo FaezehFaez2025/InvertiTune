@@ -1,0 +1,320 @@
+{
+    "root": {
+        "entity_id": "Q4736169",
+        "name": "Altar Mountain",
+        "outgoing_edges": [
+            {
+                "target": {
+                    "entity_id": "Q8502",
+                    "name": "mountain",
+                    "outgoing_edges": [],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q4736169",
+                            "source_name": "Altar Mountain",
+                            "edge_label": "instance of"
+                        }
+                    ]
+                },
+                "edge_label": "instance of"
+            },
+            {
+                "target": {
+                    "entity_id": "Q51",
+                    "name": "Antarctica",
+                    "outgoing_edges": [
+                        {
+                            "target": {
+                                "entity_id": "Q818322",
+                                "name": "Bentley Subglacial Trench",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q39816",
+                                            "name": "valley",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q818322",
+                                                    "source_name": "Bentley Subglacial Trench",
+                                                    "edge_label": "instance of"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "instance of"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q51",
+                                            "name": "Antarctica",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": []
+                                        },
+                                        "edge_label": "continent"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q21590062",
+                                            "name": "Antarctic Treaty area",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q818322",
+                                                        "name": "Bentley Subglacial Trench",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "lowest point"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q3321733",
+                                                        "name": "demographics of Antarctica",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q21590062",
+                                                                    "name": "Antarctic Treaty area",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": []
+                                                                },
+                                                                "edge_label": "location"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q23983664",
+                                                                    "name": "demographics of country or region",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q3321733",
+                                                                            "source_name": "demographics of Antarctica",
+                                                                            "edge_label": "instance of"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "instance of"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q21590062",
+                                                                    "name": "Antarctic Treaty area",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": []
+                                                                },
+                                                                "edge_label": "facet of"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q21590062",
+                                                                "source_name": "Antarctic Treaty area",
+                                                                "edge_label": "demographics of topic"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "demographics of topic"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q4736169",
+                                                    "source_name": "Altar Mountain",
+                                                    "edge_label": "located in the administrative territorial entity"
+                                                },
+                                                {
+                                                    "source_id": "Q51",
+                                                    "source_name": "Antarctica",
+                                                    "edge_label": "located in the administrative territorial entity"
+                                                },
+                                                {
+                                                    "source_id": "Q818322",
+                                                    "source_name": "Bentley Subglacial Trench",
+                                                    "edge_label": "located in the administrative territorial entity"
+                                                },
+                                                {
+                                                    "source_id": "Q3321733",
+                                                    "source_name": "demographics of Antarctica",
+                                                    "edge_label": "location"
+                                                },
+                                                {
+                                                    "source_id": "Q3321733",
+                                                    "source_name": "demographics of Antarctica",
+                                                    "edge_label": "facet of"
+                                                },
+                                                {
+                                                    "source_id": "Q17189941",
+                                                    "source_name": "Mount Vinson",
+                                                    "edge_label": "located in the administrative territorial entity"
+                                                },
+                                                {
+                                                    "source_id": "Q1778845",
+                                                    "source_name": "Sentinel Range",
+                                                    "edge_label": "located in the administrative territorial entity"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "located in the administrative territorial entity"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q51",
+                                        "source_name": "Antarctica",
+                                        "edge_label": "lowest point"
+                                    },
+                                    {
+                                        "source_id": "Q21590062",
+                                        "source_name": "Antarctic Treaty area",
+                                        "edge_label": "lowest point"
+                                    }
+                                ]
+                            },
+                            "edge_label": "lowest point"
+                        },
+                        {
+                            "target": {
+                                "entity_id": "Q163758",
+                                "name": "Vinson Massif",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q17189941",
+                                            "name": "Mount Vinson",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q21590062",
+                                                        "name": "Antarctic Treaty area",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "located in the administrative territorial entity"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q163758",
+                                                        "name": "Vinson Massif",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "mountain range"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q163758",
+                                                    "source_name": "Vinson Massif",
+                                                    "edge_label": "highest point"
+                                                },
+                                                {
+                                                    "source_id": "Q1778845",
+                                                    "source_name": "Sentinel Range",
+                                                    "edge_label": "highest point"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "highest point"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q1778845",
+                                            "name": "Sentinel Range",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q17189941",
+                                                        "name": "Mount Vinson",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "highest point"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q51",
+                                                        "name": "Antarctica",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "continent"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q21590062",
+                                                        "name": "Antarctic Treaty area",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "located in the administrative territorial entity"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q163758",
+                                                    "source_name": "Vinson Massif",
+                                                    "edge_label": "mountain range"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "mountain range"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q51",
+                                        "source_name": "Antarctica",
+                                        "edge_label": "highest point"
+                                    },
+                                    {
+                                        "source_id": "Q17189941",
+                                        "source_name": "Mount Vinson",
+                                        "edge_label": "mountain range"
+                                    }
+                                ]
+                            },
+                            "edge_label": "highest point"
+                        },
+                        {
+                            "target": {
+                                "entity_id": "Q21590062",
+                                "name": "Antarctic Treaty area",
+                                "outgoing_edges": [],
+                                "incoming_edges": []
+                            },
+                            "edge_label": "located in the administrative territorial entity"
+                        }
+                    ],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q4736169",
+                            "source_name": "Altar Mountain",
+                            "edge_label": "continent"
+                        },
+                        {
+                            "source_id": "Q818322",
+                            "source_name": "Bentley Subglacial Trench",
+                            "edge_label": "continent"
+                        },
+                        {
+                            "source_id": "Q1778845",
+                            "source_name": "Sentinel Range",
+                            "edge_label": "continent"
+                        }
+                    ]
+                },
+                "edge_label": "continent"
+            },
+            {
+                "target": {
+                    "entity_id": "Q21590062",
+                    "name": "Antarctic Treaty area",
+                    "outgoing_edges": [],
+                    "incoming_edges": []
+                },
+                "edge_label": "located in the administrative territorial entity"
+            }
+        ],
+        "incoming_edges": []
+    }
+}

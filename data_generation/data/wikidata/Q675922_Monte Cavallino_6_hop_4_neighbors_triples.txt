@@ -1,0 +1,1 @@
+["Monte Cavallino", "instance of", "mountain"]

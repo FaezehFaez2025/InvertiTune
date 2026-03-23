@@ -1,0 +1,344 @@
+{
+    "root": {
+        "entity_id": "Q7243709",
+        "name": "Primus Peak",
+        "outgoing_edges": [
+            {
+                "target": {
+                    "entity_id": "Q8502",
+                    "name": "mountain",
+                    "outgoing_edges": [],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q7243709",
+                            "source_name": "Primus Peak",
+                            "edge_label": "instance of"
+                        }
+                    ]
+                },
+                "edge_label": "instance of"
+            },
+            {
+                "target": {
+                    "entity_id": "Q1223",
+                    "name": "Washington",
+                    "outgoing_edges": [
+                        {
+                            "target": {
+                                "entity_id": "Q7972240",
+                                "name": "Washington State Digital Archives",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q30",
+                                            "name": "United States",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q7972240",
+                                                    "source_name": "Washington State Digital Archives",
+                                                    "edge_label": "country"
+                                                },
+                                                {
+                                                    "source_id": "Q7054706",
+                                                    "source_name": "North Cascades National Park Complex",
+                                                    "edge_label": "country"
+                                                },
+                                                {
+                                                    "source_id": "Q106020312",
+                                                    "source_name": "economy of Seattle",
+                                                    "edge_label": "country"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "country"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q1223",
+                                            "name": "Washington",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": []
+                                        },
+                                        "edge_label": "operator"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q1223",
+                                        "source_name": "Washington",
+                                        "edge_label": "archives at"
+                                    }
+                                ]
+                            },
+                            "edge_label": "archives at"
+                        }
+                    ],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q7243709",
+                            "source_name": "Primus Peak",
+                            "edge_label": "located in the administrative territorial entity"
+                        },
+                        {
+                            "source_id": "Q7972240",
+                            "source_name": "Washington State Digital Archives",
+                            "edge_label": "operator"
+                        }
+                    ]
+                },
+                "edge_label": "located in the administrative territorial entity"
+            },
+            {
+                "target": {
+                    "entity_id": "Q1163799",
+                    "name": "North Cascades National Park",
+                    "outgoing_edges": [
+                        {
+                            "target": {
+                                "entity_id": "Q7054706",
+                                "name": "North Cascades National Park Complex",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q30",
+                                            "name": "United States",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": []
+                                        },
+                                        "edge_label": "country"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q46169",
+                                            "name": "national park",
+                                            "outgoing_edges": [],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q7054706",
+                                                    "source_name": "North Cascades National Park Complex",
+                                                    "edge_label": "instance of"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "instance of"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q1163799",
+                                        "source_name": "North Cascades National Park",
+                                        "edge_label": "part of"
+                                    }
+                                ]
+                            },
+                            "edge_label": "part of"
+                        },
+                        {
+                            "target": {
+                                "entity_id": "Q5083",
+                                "name": "Seattle",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q106020312",
+                                            "name": "economy of Seattle",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q30",
+                                                        "name": "United States",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "country"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q5083",
+                                                        "name": "Seattle",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "location"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q100773131",
+                                                        "name": "regional economy",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q106020312",
+                                                                "source_name": "economy of Seattle",
+                                                                "edge_label": "instance of"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "instance of"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q5083",
+                                                    "source_name": "Seattle",
+                                                    "edge_label": "economy of topic"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "economy of topic"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q1139352",
+                                            "name": "Creative Cities Network",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q1900326",
+                                                        "name": "network",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q1139352",
+                                                                "source_name": "Creative Cities Network",
+                                                                "edge_label": "instance of"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "instance of"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q7809",
+                                                        "name": "UNESCO",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q142",
+                                                                    "name": "France",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q4261422",
+                                                                                "name": "outline of France",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q142",
+                                                                                        "source_name": "France",
+                                                                                        "edge_label": "Wikimedia outline"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "Wikimedia outline"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q150",
+                                                                                "name": "French",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q142",
+                                                                                        "source_name": "France",
+                                                                                        "edge_label": "official language"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "official language"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q43192",
+                                                                                "name": "flag of France",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q142",
+                                                                                        "source_name": "France",
+                                                                                        "edge_label": "flag"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "flag"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q3016893",
+                                                                                "name": "data.gouv.fr",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q142",
+                                                                                        "source_name": "France",
+                                                                                        "edge_label": "open data portal"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "open data portal"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q7809",
+                                                                            "source_name": "UNESCO",
+                                                                            "edge_label": "country"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "country"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q1139352",
+                                                                "source_name": "Creative Cities Network",
+                                                                "edge_label": "operator"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "operator"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q5083",
+                                                    "source_name": "Seattle",
+                                                    "edge_label": "member of"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "member of"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q1163799",
+                                        "source_name": "North Cascades National Park",
+                                        "edge_label": "significant place"
+                                    },
+                                    {
+                                        "source_id": "Q106020312",
+                                        "source_name": "economy of Seattle",
+                                        "edge_label": "location"
+                                    }
+                                ]
+                            },
+                            "edge_label": "significant place"
+                        }
+                    ],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q7243709",
+                            "source_name": "Primus Peak",
+                            "edge_label": "located in protected area"
+                        }
+                    ]
+                },
+                "edge_label": "located in protected area"
+            }
+        ],
+        "incoming_edges": []
+    }
+}

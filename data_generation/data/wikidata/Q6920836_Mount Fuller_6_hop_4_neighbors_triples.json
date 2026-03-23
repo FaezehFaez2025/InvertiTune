@@ -1,0 +1,357 @@
+{
+    "root": {
+        "entity_id": "Q6920836",
+        "name": "Mount Fuller",
+        "outgoing_edges": [
+            {
+                "target": {
+                    "entity_id": "Q473357",
+                    "name": "Royal Society Range",
+                    "outgoing_edges": [
+                        {
+                            "target": {
+                                "entity_id": "Q21590062",
+                                "name": "Antarctic Treaty area",
+                                "outgoing_edges": [
+                                    {
+                                        "target": {
+                                            "entity_id": "Q21635013",
+                                            "name": "flag of the Antarctic Treaty",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q20970431",
+                                                        "name": "3:2",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q109575129",
+                                                                    "name": "landscape orientation",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q109575132",
+                                                                                "name": "portrait orientation",
+                                                                                "outgoing_edges": [
+                                                                                    {
+                                                                                        "target": {
+                                                                                            "entity_id": "Q109575129",
+                                                                                            "name": "landscape orientation",
+                                                                                            "outgoing_edges": [],
+                                                                                            "incoming_edges": []
+                                                                                        },
+                                                                                        "edge_label": "opposite of"
+                                                                                    }
+                                                                                ],
+                                                                                "incoming_edges": [
+                                                                                    {
+                                                                                        "source_id": "Q109575129",
+                                                                                        "source_name": "landscape orientation",
+                                                                                        "edge_label": "opposite of"
+                                                                                    },
+                                                                                    {
+                                                                                        "source_id": "Q98929171",
+                                                                                        "source_name": "2:3",
+                                                                                        "edge_label": "has characteristic"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "edge_label": "opposite of"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q20970431",
+                                                                            "source_name": "3:2",
+                                                                            "edge_label": "has characteristic"
+                                                                        },
+                                                                        {
+                                                                            "source_id": "Q109575132",
+                                                                            "source_name": "portrait orientation",
+                                                                            "edge_label": "opposite of"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "has characteristic"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q98929171",
+                                                                    "name": "2:3",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q20970431",
+                                                                                "name": "3:2",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": []
+                                                                            },
+                                                                            "edge_label": "opposite of"
+                                                                        },
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q109575132",
+                                                                                "name": "portrait orientation",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": []
+                                                                            },
+                                                                            "edge_label": "has characteristic"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q20970431",
+                                                                            "source_name": "3:2",
+                                                                            "edge_label": "opposite of"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "opposite of"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q20970434",
+                                                                    "name": "width to height aspect ratio",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q20970431",
+                                                                            "source_name": "3:2",
+                                                                            "edge_label": "instance of"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "instance of"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q21635013",
+                                                                "source_name": "flag of the Antarctic Treaty",
+                                                                "edge_label": "aspect ratio (W:H)"
+                                                            },
+                                                            {
+                                                                "source_id": "Q98929171",
+                                                                "source_name": "2:3",
+                                                                "edge_label": "opposite of"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "aspect ratio (W:H)"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q21590062",
+                                                        "name": "Antarctic Treaty area",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": []
+                                                    },
+                                                    "edge_label": "applies to jurisdiction"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q14660",
+                                                        "name": "flag",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q21635013",
+                                                                "source_name": "flag of the Antarctic Treaty",
+                                                                "edge_label": "instance of"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "instance of"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q21590062",
+                                                    "source_name": "Antarctic Treaty area",
+                                                    "edge_label": "flag"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "flag"
+                                    },
+                                    {
+                                        "target": {
+                                            "entity_id": "Q182814",
+                                            "name": "Antarctic Treaty System",
+                                            "outgoing_edges": [
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q48525",
+                                                        "name": "Federal Government of the United States",
+                                                        "outgoing_edges": [
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q1006644",
+                                                                    "name": "federal government",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q48525",
+                                                                            "source_name": "Federal Government of the United States",
+                                                                            "edge_label": "instance of"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "instance of"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q30",
+                                                                    "name": "United States",
+                                                                    "outgoing_edges": [
+                                                                        {
+                                                                            "target": {
+                                                                                "entity_id": "Q48525",
+                                                                                "name": "Federal Government of the United States",
+                                                                                "outgoing_edges": [],
+                                                                                "incoming_edges": []
+                                                                            },
+                                                                            "edge_label": "executive body"
+                                                                        }
+                                                                    ],
+                                                                    "incoming_edges": [
+                                                                        {
+                                                                            "source_id": "Q48525",
+                                                                            "source_name": "Federal Government of the United States",
+                                                                            "edge_label": "applies to jurisdiction"
+                                                                        },
+                                                                        {
+                                                                            "source_id": "Q48525",
+                                                                            "source_name": "Federal Government of the United States",
+                                                                            "edge_label": "country of citizenship"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "edge_label": "applies to jurisdiction"
+                                                            },
+                                                            {
+                                                                "target": {
+                                                                    "entity_id": "Q30",
+                                                                    "name": "United States",
+                                                                    "outgoing_edges": [],
+                                                                    "incoming_edges": []
+                                                                },
+                                                                "edge_label": "country of citizenship"
+                                                            }
+                                                        ],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q182814",
+                                                                "source_name": "Antarctic Treaty System",
+                                                                "edge_label": "depositary"
+                                                            },
+                                                            {
+                                                                "source_id": "Q30",
+                                                                "source_name": "United States",
+                                                                "edge_label": "executive body"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "depositary"
+                                                },
+                                                {
+                                                    "target": {
+                                                        "entity_id": "Q51",
+                                                        "name": "Antarctica",
+                                                        "outgoing_edges": [],
+                                                        "incoming_edges": [
+                                                            {
+                                                                "source_id": "Q182814",
+                                                                "source_name": "Antarctic Treaty System",
+                                                                "edge_label": "continent"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "edge_label": "continent"
+                                                }
+                                            ],
+                                            "incoming_edges": [
+                                                {
+                                                    "source_id": "Q21590062",
+                                                    "source_name": "Antarctic Treaty area",
+                                                    "edge_label": "named after"
+                                                }
+                                            ]
+                                        },
+                                        "edge_label": "named after"
+                                    }
+                                ],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q6920836",
+                                        "source_name": "Mount Fuller",
+                                        "edge_label": "located in the administrative territorial entity"
+                                    },
+                                    {
+                                        "source_id": "Q473357",
+                                        "source_name": "Royal Society Range",
+                                        "edge_label": "located in the administrative territorial entity"
+                                    },
+                                    {
+                                        "source_id": "Q21635013",
+                                        "source_name": "flag of the Antarctic Treaty",
+                                        "edge_label": "applies to jurisdiction"
+                                    }
+                                ]
+                            },
+                            "edge_label": "located in the administrative territorial entity"
+                        },
+                        {
+                            "target": {
+                                "entity_id": "Q46831",
+                                "name": "mountain range",
+                                "outgoing_edges": [],
+                                "incoming_edges": [
+                                    {
+                                        "source_id": "Q473357",
+                                        "source_name": "Royal Society Range",
+                                        "edge_label": "instance of"
+                                    }
+                                ]
+                            },
+                            "edge_label": "instance of"
+                        }
+                    ],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q6920836",
+                            "source_name": "Mount Fuller",
+                            "edge_label": "mountain range"
+                        }
+                    ]
+                },
+                "edge_label": "mountain range"
+            },
+            {
+                "target": {
+                    "entity_id": "Q21590062",
+                    "name": "Antarctic Treaty area",
+                    "outgoing_edges": [],
+                    "incoming_edges": []
+                },
+                "edge_label": "located in the administrative territorial entity"
+            },
+            {
+                "target": {
+                    "entity_id": "Q8502",
+                    "name": "mountain",
+                    "outgoing_edges": [],
+                    "incoming_edges": [
+                        {
+                            "source_id": "Q6920836",
+                            "source_name": "Mount Fuller",
+                            "edge_label": "instance of"
+                        }
+                    ]
+                },
+                "edge_label": "instance of"
+            }
+        ],
+        "incoming_edges": []
+    }
+}
