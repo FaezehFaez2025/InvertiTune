@@ -25,28 +25,6 @@ python knowledge_base_triple_extractor.py --multiple_samples --num_samples 10 --
 
 ---
 
-# calculate_pruned_triple_statistics.py
-
-This script calculates statistics for triples stored in `_pruned.txt` files within the `data` directory. It provides the number of files, average number of triples per file, maximum/minimum number of triples per file, standard deviation, and a distribution of the number of triples across files.
-
-**Command to run:**
-```bash
-python calculate_pruned_triple_statistics.py --source wikidata
-```
-
-**Additional commands:**
-```bash
-python calculate_pruned_triple_statistics.py --source wikidata --postfix _triples.txt
-```
-
-```bash
-python calculate_pruned_triple_statistics.py --source wikidata --postfix _triples.txt --path ../data/test/
-```
-
-```bash
-python calculate_pruned_triple_statistics.py --source wikidata --postfix _triples.txt --path ../data/train/
-```
-
 # generate_text_from_kg.py
 ```bash
 python generate_text_from_kg.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --postfix "_triples.txt"
