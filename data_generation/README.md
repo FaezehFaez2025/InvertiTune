@@ -103,36 +103,6 @@ python knowledge_base_triple_extractor.py --multiple_samples --num_samples 2 --m
 ```bash
 python knowledge_base_triple_extractor.py --multiple_samples --num_samples 200 --max_hops 4 --parallel --num_threads 5 --controlled_extraction --num_neighbors_per_hop 6 --source wikidata --type_qid Q5 --resume_generation
 ``` 
-# filter_triples_with_llm.py
-```bash
-python filter_triples_with_llm.py --source wikidata --model gpt-3.5-turbo --llm_provider chatgpt
-```
-
-```bash
-python filter_triples_with_llm.py --source yago --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek
-```
-
-```bash
-python filter_triples_with_llm.py --source wikidata --model deepseek-ai/DeepSeek-R1 --llm_provider deepseek
-```
-
-```bash
-python filter_triples_with_llm.py --model deepseek-chat --llm_provider deepseek_direct
-```
-
-## Parallel Filtering
-```bash
-python filter_triples_with_llm.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --parallel --num_threads 4
-```
-## Parallel Batch Filtering
-This command processes triples in batch mode, validating all triples in a file with a single API call for efficient processing.
-```bash
-python filter_triples_with_llm.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --mode batch --parallel --num_threads 8
-```
-## Parallel Batch Filtering with Batch Size
-```bash
-python filter_triples_with_llm.py --source wikidata --model deepseek-ai/DeepSeek-V3 --llm_provider deepseek --mode batch --batch_size 10 --parallel --num_threads 2
-```
 # calculate_pruned_triple_statistics.py
 
 This script calculates statistics for triples stored in `_pruned.txt` files within the `data` directory. It provides the number of files, average number of triples per file, maximum/minimum number of triples per file, standard deviation, and a distribution of the number of triples across files.
