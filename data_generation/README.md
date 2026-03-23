@@ -1,6 +1,6 @@
 # Knowledge Base Subgraph Extractor
 
-This script extracts local subgraphs from **Wikidata** by traversing multi-hop neighborhoods around seed entities. It produces (subject, predicate, object) triples that form the subgraph surrounding each entity.
+This script extracts local subgraphs from a knowledge base (e.g., Wikidata) by traversing multi-hop neighborhoods around seed entities. It produces (subject, predicate, object) triples that form the subgraph surrounding each entity.
 
 ## Usage
 
