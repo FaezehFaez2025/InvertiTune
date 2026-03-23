@@ -1,5 +1,12 @@
 # Text-to-Knowledge Graph Fine-tuning Pipeline
 
+## Environment Setup
+
+```bash
+conda create --name InvertiTun_env python=3.10
+conda activate InvertiTun_env
+```
+
 ## Requirements
 
 ### Installation
