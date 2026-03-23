@@ -13,7 +13,7 @@ conda activate InvertiTun_env
 ```
 
 ```bash
-pip install SPARQLWrapper tqdm
+pip install SPARQLWrapper tqdm openai python-dotenv
 ```
 
 ```bash
