@@ -84,10 +84,6 @@ python generate_text_from_kg.py --source wikidata --model deepseek-ai/DeepSeek-V
 ```bash
 python partition_files.py --source wikidata --num_partitions 3
 ```
-# rule_based_triple_filtering.py
-```bash
-python rule_based_triple_filtering.py --source wikidata
-```
 # entity_triple_viewer.py
 
 This script retrieves all relationships where the specified entity is the subject. It queries Wikidata to extract and display all triples associated with a given entity ID.
