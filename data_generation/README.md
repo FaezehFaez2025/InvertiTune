@@ -1,46 +1,30 @@
-# knowledge_base_triple_extractor.py
+# Knowledge Base Subgraph Extractor
 
-This Python script extracts triples (subject, predicate, object) from **Wikidata** or **YAGO** knowledge bases. It retrieves n-hop neighbors of a given entity and includes an optional GUI to select 
-and save some of the triples.
+This script extracts local subgraphs from **Wikidata** or **YAGO** knowledge bases by traversing multi-hop neighborhoods around seed entities. It produces (subject, predicate, object) triples that form the subgraph surrounding each entity.
 
 ## Usage
 
-### Command-Line Arguments
-- `--entity`: The entity ID to query (e.g., `Q12345` for Wikidata or `ACF_Fiorentina` for YAGO).
-- `--hops`: The number of hops (default: 1).
-- `--save`: Enable the GUI to select and save some of the triples.
-- `--source`: The knowledge base to query (`wikidata` or `yago`). Default is `wikidata`.
+```bash
+python knowledge_base_triple_extractor.py --multiple_samples --num_samples 10 --max_hops 6 --parallel --num_threads 2 --controlled_extraction --num_neighbors_per_hop 4 --source wikidata --type_qid Q8502 --resume_generation
+```
 
-### Example Commands
+### Argument Reference
 
-#### Query Wikidata
-```bash
-python knowledge_base_triple_extractor.py --entity Q12345 --hops 2 --save
-```
-#### Query YAGO:
-```bash
-python knowledge_base_triple_extractor.py --entity ACF_Fiorentina --hops 2 --source yago --save
-```
-#### TBC
-```bash
-python knowledge_base_triple_extractor.py --multiple_samples --num_samples 5000 --max_hops 2 --source wikidata --ratio 0.2
-```
-#### Parallel Extraction (TBC)
-```bash
-python knowledge_base_triple_extractor.py --multiple_samples --num_samples 10 --max_hops 2 --source wikidata --ratio 0.3 --parallel --num_threads 4
-```
-#### Controlled Extraction (TBC)
-```bash
-python knowledge_base_triple_extractor.py --multiple_samples --num_samples 10 --max_hops 4 --parallel --num_threads 2 --controlled_extraction --num_neighbors_per_hop 3 --source wikidata
-```
-#### Controlled Extraction with Entity Type Constraints (TBC)
-```bash
-python knowledge_base_triple_extractor.py --multiple_samples --num_samples 2 --max_hops 4 --parallel --num_threads 2 --controlled_extraction --num_neighbors_per_hop 5 --source wikidata --type_qid Q5
-```
-#### Resume Generation
-```bash
-python knowledge_base_triple_extractor.py --multiple_samples --num_samples 200 --max_hops 4 --parallel --num_threads 5 --controlled_extraction --num_neighbors_per_hop 6 --source wikidata --type_qid Q5 --resume_generation
-``` 
+| Argument | Description |
+|----------|-------------|
+| `--multiple_samples` | Enable batch mode: extract subgraphs for multiple entities instead of a single entity. |
+| `--num_samples` | Number of entity subgraphs to extract (e.g., `10`). |
+| `--max_hops` | Maximum neighborhood depth. Entities up to 6 hops away from the seed are included in the subgraph. |
+| `--parallel` | Run extraction in parallel across multiple threads. |
+| `--num_threads` | Number of worker threads for parallel extraction (e.g., `2`). |
+| `--controlled_extraction` | Use controlled expansion: limit how many neighbors are added at each hop to keep subgraphs manageable. |
+| `--num_neighbors_per_hop` | Maximum neighbors to expand per hop in controlled mode (e.g., `4`). |
+| `--source` | Knowledge base to query: `wikidata` or `yago`. |
+| `--type_qid` | Wikidata QID for entity type filter. Only entities of this type are used as seeds (e.g., `Q8502` for mountains). You can use any valid Wikidata type QID. |
+| `--resume_generation` | Skip entities that already have output files and only process new ones. Useful for resuming interrupted runs. |
+
+---
+
 # calculate_pruned_triple_statistics.py
 
 This script calculates statistics for triples stored in `_pruned.txt` files within the `data` directory. It provides the number of files, average number of triples per file, maximum/minimum number of triples per file, standard deviation, and a distribution of the number of triples across files.
