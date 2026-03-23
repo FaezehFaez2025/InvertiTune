@@ -1,5 +1,7 @@
 # Text-to-Knowledge Graph Fine-tuning Pipeline
 
+This is the official repository for the [InvertiTune](https://arxiv.org/pdf/2512.03197) paper.
+
 ## Environment Setup & Installation
 
 ```bash
