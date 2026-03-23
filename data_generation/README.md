@@ -1,6 +1,6 @@
 # Knowledge Base Subgraph Extractor
 
-This script extracts local subgraphs from **Wikidata** or **YAGO** knowledge bases by traversing multi-hop neighborhoods around seed entities. It produces (subject, predicate, object) triples that form the subgraph surrounding each entity.
+This script extracts local subgraphs from **Wikidata** by traversing multi-hop neighborhoods around seed entities. It produces (subject, predicate, object) triples that form the subgraph surrounding each entity.
 
 ## Usage
 
@@ -19,7 +19,7 @@ python knowledge_base_triple_extractor.py --multiple_samples --num_samples 10 --
 | `--num_threads` | Number of worker threads for parallel extraction (e.g., `2`). |
 | `--controlled_extraction` | Use controlled expansion: limit how many neighbors are added at each hop to keep subgraphs manageable. |
 | `--num_neighbors_per_hop` | Maximum neighbors to expand per hop in controlled mode (e.g., `4`). |
-| `--source` | Knowledge base to query: `wikidata` or `yago`. |
+| `--source` | Knowledge base to query (e.g., `wikidata`). |
 | `--type_qid` | Wikidata QID for entity type filter. Only entities of this type are used as seeds (e.g., `Q8502` for mountains). You can use any valid Wikidata type QID. |
 | `--resume_generation` | Skip entities that already have output files and only process new ones. Useful for resuming interrupted runs. |
 
