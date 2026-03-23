@@ -36,26 +36,6 @@ This script automates the entire pipeline for fine-tuning and evaluating the mod
 ./pipeline.sh
 ```
 
-### Specify GPU Device
-```bash
-./pipeline.sh --gpu 1
-```
-
-### KELM Dataset
-```bash
-./pipeline.sh --dataset kelm_sub
-```
-
-### WebNLG20 Dataset
-```bash
-./pipeline.sh --dataset webnlg20
-```
-
-### GenWiki-HIQ Dataset
-```bash
-./pipeline.sh --dataset genwiki_hiq
-```
-
 ## Pipeline Steps
 The script will automatically:
 1. Prepare the data for the selected dataset
