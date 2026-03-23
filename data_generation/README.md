@@ -84,10 +84,3 @@ python generate_text_from_kg.py --source wikidata --model deepseek-ai/DeepSeek-V
 ```bash
 python partition_files.py --source wikidata --num_partitions 3
 ```
-# entity_expansion_evaluator.py
-
-Evaluates if a Wikidata entity is worth expanding based on triple informativeness. First applies rule-based filtering, then uses LLM prompting on the remaining triples to determine if all are non-informative or if any informative triples exist.
-
-```bash
-python entity_expansion_evaluator.py Q5 --model gpt-4o --batch_size 1
-```
